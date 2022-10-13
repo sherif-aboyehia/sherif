@@ -1,0 +1,350 @@
+/*
+selector{element name || class(.) || id(#)}
+{
+            ****Background****
+    background-color: rgb(255 0 0 / 50%)=> red-green-blue-alpha channel
+    background-color: #ff0000 => color hex code
+    background-image: url(../CSS/img.jpg)
+    background-repeat: repeat; => default value
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: contain;
+             ****Padding and Margin******
+    padding : top right bottom left
+    margin : top right bottom left
+            **** Border and Outline******
+    border-width: 10px;
+    border-color: blue;
+    border-style: solid;
+    outline 10px red solid;
+
+    z-index: ;
+    A  a
+}  
+ */
+ 
+nav ul {
+         list-style: none;
+ }
+ nav ul li {
+         display: inline-block;
+         margin-left: 10px;
+ }
+ section.name {
+         font-weight: bold;
+ }
+ 
+ nav button {
+        width: 150px;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px red solid;
+        border-radius: 85px;
+        position:absolute;
+        top: 0;
+        right: 20px;
+}
+section button {
+        width: 135px;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border: 1px red solid;
+        border-radius: 85px;
+}
+ .head {
+         background-size: cover;
+         background-image: url("../images/pexels-photo-5710764.webp");
+         background-color: rgb(86 84 84);
+         height: 50vh; 
+         display: grid;
+         grid-template-columns: repeat(8 , 1fr);
+         grid-template-rows: 50px 300px;
+         grid-template-areas: "nav nav nav nav nav nav nav nav" "con con con con con con con con";
+         
+ }
+ nav {
+         grid-area: nav;
+         padding: 10px;
+         color: white;
+         position: sticky ;
+         top: 0;
+ }
+
+ section {
+         grid-area: con;
+         padding: 50px;
+         color: white;
+ }
+h1 {
+        font-family:ui-sans-serif;
+        color: black;
+        margin: 40px;
+        text-align: center;
+}
+.one {
+        margin-left: 40px;
+}
+.one,
+.one1 {
+        width: 800px;
+        height: 400px;
+        position: relative;
+}
+.one1 {
+        position: absolute;
+        top: 445px;
+        right: -50px;
+}
+
+
+.one p,
+.one1 p{
+        padding-left: 50px;
+        margin: 10px;
+        color: red; 
+        font-weight: bold; 
+}
+.one1 p {
+        padding-left: 40px;
+        margin-bottom: 40px;
+}
+ .one ul li {
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+}
+.one .rate {
+        width: 300px;
+        height: 3px;
+        border: 1px red solid;
+        border-radius: 85px;
+        margin: 3px;
+        background-image: linear-gradient(90deg, red 95%,white 95%);
+        position: relative;
+        
+}
+
+.one .rate2 {
+        width: 300px;
+        height: 3px;
+        border: 1px red solid;
+        border-radius: 85px;
+        margin: 3px;
+        background-image: linear-gradient(90deg, red 85%,white 85%);
+        position: relative;
+}
+.one .rate3 {
+        width: 300px;
+        height: 3px;
+        border: 1px red solid;
+        border-radius: 85px;
+        margin: 3px;
+        background-image: linear-gradient(90deg, red 60%,white 60%);
+        position: relative;
+}
+strong {
+        width: 50px;
+        height: 70px;
+        position: absolute;
+        top: -25px;
+        right: -25px;
+}
+
+
+
+.one1 ul li{
+        list-style: none;
+        padding: -3px;
+        margin: 10px;
+}
+.one1 ul li small {
+        opacity: 0.5;
+}
+
+
+
+ 
+.two span {
+       
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        padding: 5px;
+        border: 1px black solid;
+        width: 150px;
+        height: 65px;
+        margin: 5px auto;
+} 
+.two span p {
+        color: red;
+}
+.two span .y {
+        color: black;
+}
+
+.parent {
+        background-color: rgb(248, 238, 238);
+
+}
+.three div{
+        border: 1px black solid;
+        width: 300px;
+        margin: 5px;
+        display: inline-block;
+        background-image: linear-gradient(68deg ,#ff00005c 45%, white 45%);
+        position: relative;
+        
+}
+.three div b {
+        position: absolute;
+        top: 0;
+        left: 275px;
+        font-size: 40px;
+        opacity: 0.5;
+        transition-duration: 1s;
+}
+b:hover {
+    margin-top: 20px;
+}
+.three div {
+        padding: 10px;
+        font-weight: bold;
+        justify-content: flex-start;
+        
+}
+.three div p {
+        padding: 10px;
+        font-weight: 10;
+}
+.three div button {
+        width: 125px;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border: 1px red solid;
+        border-radius: 85px;
+}
+.edu,
+.exp {
+        width: 400px;
+        height: 500px;
+        margin: 5px;
+        padding-top: 10px;
+        padding-left: 35px;
+        border: 1px black solid;
+        display: inline-block;
+}
+.edu
+ {
+            position: relative;
+}
+.edu::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 85%;
+        top: 50px;
+        right: 415px;
+        background-color: red;
+}
+.edu::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        position: absolute;
+        top: 44px;
+        left: 14px;
+        background-color: red;
+}
+
+.exp {
+            position: relative;
+}
+.exp::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 85%;
+        top: 50px;
+        right: 415px;
+        background-color: red;
+}
+.exp::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        position: absolute;
+        top: 44px;
+        left: 14px;
+        background-color: red;
+}
+
+.port {
+        width: 600px;
+        height: 450px;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 5px;
+        row-gap: 5px;
+        text-align: center;
+        
+}
+.port img {
+        width: 195px;
+        height: 140px;
+}
+.con form {
+        width: 700px;
+        height: 380px;
+        margin: 10px auto;
+        padding: 10px;
+        border: 1px black solid;
+        position: relative;
+
+}
+.con img {
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        right: 0;
+}
+.con input {
+        width: 380px;
+        margin-bottom: 15px;
+        padding: 5px;
+}
+.con textarea {
+        width: 387px;
+        height: 145px;
+}
+.con button {
+        width: 150px;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px red solid;
+        border-radius: 85px;
+        /* position:absolute;
+        top: 0;
+        right: 20px; */
+}
+.con input,
+.im {
+        display: inline-block;
+}
+.footer {
+        /* background-color: #eee; */
+        text-align: center;
+        /* width: fit-content; */
+}
+.footer span {
+        color: red;
+}
